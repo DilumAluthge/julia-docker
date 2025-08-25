@@ -3,13 +3,17 @@
 Run the following commands in Bash:
 
 ```bash
-docker pull julia-1.11.6-trixie
+export JULIA_VERSION="1.11.6"
+export IMAGE="julia:${JULIA_VERSION:?}-trixie"
+export TARBALL_NAME="julia-${JULIA_VERSION:?}-trixie"
+
+docker pull "${IMAGE:?}"
 
 mkdir MY_WORKING_DIR
 
 cd MY_WORKING_DIR
 
-docker image save julia-1.11.6-trixie --output julia-1.11.6-trixie.tar
+docker export --output="${TARBALL_NAME:?}.tar" "$(docker container create julia:1.11.6-trixie)"
 
 ls julia-1.11.6-trixie.tar
 
