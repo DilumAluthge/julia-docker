@@ -40,3 +40,6 @@ tarball_url = "https://github.com/DilumAluthge/julia-docker/releases/download/ju
 # This will create the Artifacts.toml file:
 ArtifactUtils.add_artifact!(artifacts_toml, name, tarball_url)
 ```
+
+Now take the newly-created `Artifacts.toml` file, and check it into this repo.
+
