@@ -4,3 +4,10 @@ git-tree-sha1 = "28d12ab7fdf9f6578e1936dc3e50434ffc2fda02"
     [["julia-1.11.6-trixie".download]]
     sha256 = "ccb15048755e1673d9184550ef1ccab7de6393ecaab8d751e44d03ee2108b90e"
     url = "https://github.com/DilumAluthge/julia-docker/releases/download/julia-1.11.6-trixie/julia-1.11.6-trixie.tar.gz"
+
+["julia-1.11.6-trixie-extras"]
+git-tree-sha1 = "bbccbdd9fa7b278badb28ca10a5844b60fa9aade"
+
+    [["julia-1.11.6-trixie-extras".download]]
+    sha256 = "3fb4ee59396097abc73b436f4bcedb369b1625baefe52244ad80720fa5d930aa"
+    url = "https://github.com/DilumAluthge/julia-docker/releases/download/julia-1.11.6-trixie/julia-1.11.6-trixie-extras.tar.gz"
